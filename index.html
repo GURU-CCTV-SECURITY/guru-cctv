@@ -235,14 +235,17 @@
     }
 
     .product-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 15px;
-      display: grid;
-      place-items: center;
-      font-size: 29px;
-      background: rgba(0,198,255,.10);
-      margin-bottom: 20px;
+  width: 100%;
+  min-height: 58px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  background: rgba(0,198,255,.10);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
     }
 
     .product-card h3 {
@@ -587,13 +590,19 @@
           </p>
         </div>
 
-        <div class="product-card">
-          <div class="product-icon">📡</div>
-          <h3>WiFi Camera</h3>
-          <p>
-            Smart WiFi cameras ke saath easy remote monitoring.
-          </p>
-        </div>
+<a href="./wifi-camera.jpg" target="_blank" class="product-card">
+  <div class="product-icon">
+    <img src="./wifi-camera.jpg"
+         alt="WiFi Camera"
+         style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+  </div>
+
+  <h3>WiFi Camera</h3>
+
+  <p>
+    Smart WiFi cameras ke saath easy remote monitoring.
+  </p>
+</a>
 
         <div class="product-card">
           <div class="product-icon">☀️</div>
